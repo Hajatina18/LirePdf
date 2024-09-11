@@ -17,7 +17,7 @@ namespace Automatisation.Controllers
         public IActionResult LirePdf()
         {
             
-            string filePath = Path.Combine(Directory.GetCurrentDirectory(), "D:/pdf/raport.pdf");
+            string filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/pdf/raport.pdf");
 
             
             if (!System.IO.File.Exists(filePath))
