@@ -14,7 +14,7 @@ namespace Automatisation.Controllers
         }
 
        
-        public IActionResult LireAvecITextSharp()
+        public IActionResult LirePdf()
         {
             
             string filePath = Path.Combine(Directory.GetCurrentDirectory(), "D:/pdf/raport.pdf");
@@ -26,14 +26,14 @@ namespace Automatisation.Controllers
             }
 
             
-            string pdfText = LireContenuDuPdfAvecITextSharp(filePath);
+            string pdfText = LirePdf(filePath);
 
             
             return Content(pdfText);
         }
 
         
-        private string LireContenuDuPdfAvecITextSharp(string filePath)
+        private string LirePdf(string filePath)
         {
             string textePdf = string.Empty;
 
